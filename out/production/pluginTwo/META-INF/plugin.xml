@@ -1,0 +1,28 @@
+<idea-plugin>
+  <id>poc.plugin.two</id>
+  <name>PluginTwo</name>
+  <version>1.0</version>
+
+  <description><![CDATA[
+     Plugin Two
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+    <depends>poc.plugin.one</depends>
+
+    <project-components>
+        <component>
+            <implementation-class>PluginTwoProjectComponent
+            </implementation-class>
+        </component>
+    </project-components>
+
+</idea-plugin>
